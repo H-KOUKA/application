@@ -32,7 +32,11 @@ jobs:
       - name: Test that code runs smoothly
         env:
           JETON_API: ${{ secrets.JETON_API }}
+<<<<<<< HEAD
         run: uv run train.py
+=======
+        run: uv run main.py
+>>>>>>> 34e7f9a5ad6e5a18741c472da5d950b0f6ddac11
 
       - name: Upload recording.log artifact
         uses: actions/upload-artifact@v4
